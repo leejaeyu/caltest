@@ -1,0 +1,67 @@
+{
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "workspace": "/home/jy/.openclaw/workspace",
+      "model": {
+        "primary": "openai/gpt-4.1-mini"
+      },
+      "models": {
+        "openai/gpt-4.1-mini": {}
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "faa3c9035ddde69bfa2a26b2cf8d8c7640f6dd1edd98d62e"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8083826371:AAG2NN_pc9_jxhjSjx9fOXSe8FBcqG6jjR0"
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-31T09:34:01.101Z",
+    "lastRunVersion": "2026.1.29",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.1.29",
+    "lastTouchedAt": "2026-01-31T09:34:01.127Z"
+  },
+  "web": {
+    "brave_api_key": "BSA8b5xFstlbMLYMwEjAj_nMnvfwofW"
+  }
+}
